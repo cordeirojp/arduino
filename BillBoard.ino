@@ -53,7 +53,6 @@ Adafruit_BMP280 bme;                // BMP Object
 // Function : Connection WiFi
 //
 void ConnectWifi() {
-  int progress = 0;
   int counter = 0;
 
   // Clear Display
@@ -66,7 +65,7 @@ void ConnectWifi() {
   WiFi.begin ( ssid, password );
   while ( WiFi.status() != WL_CONNECTED ) {
     counter += 20;
-    progress = (counter / 5) % 100;
+    int progress = (counter / 5) % 100;
     display.drawProgressBar(0, 40, 120, 10, progress);
     display.display();
     delay ( 50 );

@@ -1,6 +1,6 @@
 //
 // BillBoard Arduino ESP8266 Code
-// (C) ESP Porto Team #3 2018
+// (C) ESP Porto Team #3 2018 & Damien Cordeiro
 //
 
 // Libraries for Wifi & HTTP
